@@ -1,2 +1,1 @@
-# practicing-big-o-notation
-Practicing Big O Notation
+# Practicing Big O Notation
