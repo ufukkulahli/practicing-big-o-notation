@@ -18,3 +18,18 @@ public string NameOfFirstStudent(IEnumerable<string> students)
 }
 ```
 
+## O(n)
+
+Runs in linear time.  
+This operation's runtime is relative to its input (n).  
+While the input grows, execution time will do so.
+
+```csharp
+public void LogAllStudentsNames(IEnumerable<string> students)
+{
+  foreach(var student in students)
+  {
+    Logger.Log("Name of student: {0}", student.Name);
+  }
+}
+```
