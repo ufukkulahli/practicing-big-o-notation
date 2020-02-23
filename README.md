@@ -8,6 +8,7 @@ To give an example how it sounds like all together, `algorithm runtime grows 'on
 
 ## O(1)
 
+Runs in constant time.  
 This operation means constant always, fastest regardless of the input size.  
 
 ```csharp
