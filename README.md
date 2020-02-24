@@ -33,3 +33,21 @@ public void LogAllStudentsNames(IEnumerable<string> students)
   }
 }
 ```
+
+## O(n^2)
+
+Runs in quadratic time.  
+For example, when the input size is 5, 25 times iteration will take place.
+
+```csharp
+public void LogMatchedOnes(IEnumerable<string> students)
+{
+  foreach(var firstStudent in students)
+  {
+    foreach(var latterStudent in students.Reverse())
+    {
+      Logger.Log("{0} matched with {1}", firstStudent.Name, latterStudent.Name);
+    }
+  }
+}
+```
