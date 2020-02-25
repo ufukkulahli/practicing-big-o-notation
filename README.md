@@ -51,3 +51,21 @@ public void LogMatchedOnes(IEnumerable<string> students)
   }
 }
 ```
+
+## O(2n)
+
+Iteration will take place two times over input data.
+
+```csharp
+public void LogOrderedAndReversed(IEnumerable<string> students)
+{
+  foreach(var student in students)
+  {
+    Logger.Log(student.Name);
+  }
+  foreach(var student in students.Reverse())
+  {
+    Logger.Log(student.Name);
+  }
+}
+```
