@@ -69,3 +69,19 @@ public void LogOrderedAndReversed(IEnumerable<string> students)
   }
 }
 ```
+
+## O(1+n/2)
+
+Still, this example considered as O(n).  
+Because the important point is when `n` gets really big other operations will not make actual difference.
+
+```csharp
+public void LogOrderedAndReversed(IEnumerable<string> students)
+{
+  Logger.Log(students.First().Name)
+  foreach(var student in students.Half())
+  {
+    Logger.Log(student.Name);
+  }
+}
+```
