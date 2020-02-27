@@ -85,3 +85,25 @@ public void LogOrderedAndReversed(IEnumerable<string> students)
   }
 }
 ```
+
+## O(n+n^2)
+
+Still, this example considered as O(n^2).  
+Remember, when `n` gets really big, nothing else matters.
+
+```csharp
+public void Log(IEnumerable<Student> students)
+{
+  foreach(var student in students)
+  {
+    Logger.Log(student.Name);
+  }
+  foreach(var studentDesc in students.Reverse())
+  {
+    foreach(var studentAsc in students)
+    {
+      Logger.Log("Student {0} matched with {1}", studentDesc.Name, studentAsc.Name);
+    }
+  }
+}
+```
