@@ -107,3 +107,23 @@ public void Log(IEnumerable<Student> students)
   }
 }
 ```
+
+## O(1) or O(n)
+
+An algorithm could be `constant` or `linear`.  
+This means, at best, result could be obtained at first which is called `best case`  
+or could be obtained at last which is called `worst case`.
+
+```csharp
+public bool DoesStudentExist(IEnumerable<Student> students, string name)
+{
+  foreach(var student in students)
+  {
+    if(student.Name == name)
+    {
+      return true;
+    }
+  }
+  return false;
+}
+```
