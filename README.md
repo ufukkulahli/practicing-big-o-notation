@@ -1,12 +1,16 @@
 # Practicing Big O Notation
 
-Big O notation is used to describe the time and space consuming of an algorithm when the input data grows.  
+Big O notation is used to describe the `time` and `space` consuming of an algorithm when the input data grows.  
 By measuring the efficiency of the algorithms, we can choose which one to use when.  
 Letter O means `order of the function`, in other words growth rate.  
 We use `n` to describe the size of the input with this notation.  
 To give an example how it sounds like all together, `algorithm runtime grows 'on the order of the size of the input'`, O(n).  
 
-## O(1)
+## Time complexity
+
+Below topics are for examining the time complexity that involves in algorithms.
+
+### O(1)
 
 Runs in constant time.  
 This operation means constant always, fastest regardless of the input size.  
@@ -18,7 +22,7 @@ public string NameOfFirstStudent(IEnumerable<string> students)
 }
 ```
 
-## O(n)
+### O(n)
 
 Runs in linear time.  
 This operation's runtime is relative to its input (n).  
@@ -34,7 +38,7 @@ public void LogAllStudentsNames(IEnumerable<string> students)
 }
 ```
 
-## O(n^2)
+### O(n^2)
 
 Runs in quadratic time.  
 For example, when the input size is 5, 25 times iteration will take place.
@@ -52,7 +56,7 @@ public void LogMatchedOnes(IEnumerable<string> students)
 }
 ```
 
-## O(2n)
+### O(2n)
 
 Iteration will take place two times over input data.
 
@@ -70,7 +74,7 @@ public void LogOrderedAndReversed(IEnumerable<string> students)
 }
 ```
 
-## O(1+n/2)
+### O(1+n/2)
 
 Still, this example considered as O(n).  
 Because the important point is when `n` gets really big other operations will not make actual difference.
@@ -86,7 +90,7 @@ public void LogOrderedAndReversed(IEnumerable<string> students)
 }
 ```
 
-## O(n+n^2)
+### O(n+n^2)
 
 Still, this example considered as O(n^2).  
 Remember, when `n` gets really big, nothing else matters.
@@ -108,7 +112,7 @@ public void Log(IEnumerable<Student> students)
 }
 ```
 
-## O(1) or O(n)
+### O(1) or O(n)
 
 An algorithm could be `constant` or `linear`.  
 This means, at best, result could be obtained at first which is called `best case`  
