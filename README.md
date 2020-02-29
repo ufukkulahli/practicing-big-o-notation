@@ -131,3 +131,7 @@ public bool DoesStudentExist(IEnumerable<Student> students, string name)
   return false;
 }
 ```
+
+## Space complexity
+
+Below topics are for examining the space complexity that involves in algorithms.
