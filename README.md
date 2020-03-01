@@ -135,3 +135,18 @@ public bool DoesStudentExist(IEnumerable<Student> students, string name)
 ## Space complexity
 
 Below topics are for examining the space complexity that involves in algorithms.
+Total size of `new variables` determine the space complexity.  
+
+### O(1)
+
+Example takes O(1) space since it used only one variable.
+
+```csharp
+public void LogAllStudentsNames(IEnumerable<string> students)
+{
+  foreach(var student in students)
+  {
+    Logger.Log("Name of student: {0}", student.Name);
+  }
+}
+```
