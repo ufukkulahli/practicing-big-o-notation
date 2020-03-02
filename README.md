@@ -150,3 +150,20 @@ public void LogAllStudentsNames(IEnumerable<string> students)
   }
 }
 ```
+
+### O(n)
+
+Below example takes O(n) space.  
+The `names` collection takes same amount of items with the `students` collection.
+
+```csharp
+public IEnumerable<string> GetStudentsNames(IEnumerable<Student> students)
+{
+  var names = new List<string>();
+  foreach(var student in students)
+  {
+    names.Add(student.Name);
+  }
+  return names;
+}
+```
