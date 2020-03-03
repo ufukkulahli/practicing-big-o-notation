@@ -16,7 +16,7 @@ Runs in constant time.
 This operation means constant always, fastest regardless of the input size.
 
 ```csharp
-public string NameOfFirstStudent(IEnumerable<string> students)
+public string NameOfFirstStudent(IEnumerable<Student> students)
 {
   return students.First();
 }
@@ -29,7 +29,7 @@ This operation's runtime is relative to its input (n).
 While the input grows, execution time will do so.
 
 ```csharp
-public void LogAllStudentsNames(IEnumerable<string> students)
+public void LogAllStudentsNames(IEnumerable<Student> students)
 {
   foreach(var student in students)
   {
@@ -44,7 +44,7 @@ Runs in quadratic time.
 For example, when the input size is 5, 25 times iteration will take place.
 
 ```csharp
-public void LogMatchedOnes(IEnumerable<string> students)
+public void LogMatchedOnes(IEnumerable<Student> students)
 {
   foreach(var firstStudent in students)
   {
@@ -61,7 +61,7 @@ public void LogMatchedOnes(IEnumerable<string> students)
 Iteration will take place two times over input data.
 
 ```csharp
-public void LogOrderedAndReversed(IEnumerable<string> students)
+public void LogOrderedAndReversed(IEnumerable<Student> students)
 {
   foreach(var student in students)
   {
@@ -80,7 +80,7 @@ Still, this example considered as O(n).
 Because the important point is when `n` gets really big other operations will not make actual difference.
 
 ```csharp
-public void LogOrderedAndReversed(IEnumerable<string> students)
+public void LogOrderedAndReversed(IEnumerable<Student> students)
 {
   Logger.Log(students.First().Name)
   foreach(var student in students.Half())
@@ -142,7 +142,7 @@ Total size of `new variables` determine the space complexity.
 Example takes O(1) space since it used only one variable.
 
 ```csharp
-public void LogAllStudentsNames(IEnumerable<string> students)
+public void LogAllStudentsNames(IEnumerable<Student> students)
 {
   foreach(var student in students)
   {
