@@ -186,3 +186,22 @@ public int Grade(IEnumerable<Student> students, string studentName)
   return grade;
 }
 ```
+
+### O(2n)
+
+```csharp
+public (IEnumerable<string>, IEnumerable<string>) LogOrderedAndReversed(IEnumerable<Student> students)
+{
+  var names = new List<string>();
+  var namesReversed = new List<string>();
+  foreach (var student in students)
+  {
+    names.Add(student.Name);
+  }
+  foreach (var student in students.Reverse())
+  {
+    namesReversed.Add(student.Name);
+  }
+  return (names, namesReversed);
+}
+```
