@@ -151,6 +151,23 @@ public void LogAllStudentsNames(IEnumerable<Student> students)
 }
 ```
 
+In the example below, input has `n` items but takes O(1) space since it used only one variable.
+
+```csharp
+public int Grade(IEnumerable<Student> students, string studentName)
+{
+  var grade = 0;
+  foreach(var student in students)
+  {
+    if(studentName == student.Name)
+    {
+      grade = student.Grade;
+    }
+  }
+  return grade;
+}
+```
+
 ### O(n)
 
 Below example takes O(n) space.
@@ -165,25 +182,6 @@ public IEnumerable<string> GetStudentsNames(IEnumerable<Student> students)
     names.Add(student.Name);
   }
   return names;
-}
-```
-
-### O(1)
-
-In the example, input has `n` items but takes O(1) space since it used only one variable.
-
-```csharp
-public int Grade(IEnumerable<Student> students, string studentName)
-{
-  var grade = 0;
-  foreach(var student in students)
-  {
-    if(studentName == student.Name)
-    {
-      grade = student.Grade;
-    }
-  }
-  return grade;
 }
 ```
 
