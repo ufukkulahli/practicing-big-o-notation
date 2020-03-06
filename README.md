@@ -56,6 +56,21 @@ public void LogMatchedOnes(IEnumerable<Student> students)
 }
 ```
 
+### O(2^n)
+
+Growth `doubles` with each addition to the input.
+
+```csharp
+public int Fibonacci(int number)
+{
+  if (number <= 1)
+  {
+    return number;
+  }
+  return Fibonacci(number - 2) + Fibonacci(number - 1);
+}
+```
+
 ### O(2n)
 
 Iteration will take place two times over input data.
