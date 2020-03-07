@@ -41,7 +41,8 @@ public void LogAllStudentsNames(IEnumerable<Student> students)
 ### O(n^2)
 
 Runs in quadratic time.
-For example, when the input size is 5, 25 times iteration will take place.
+For example, when the input size is 5, 25 times iteration will take place.  
+With the much more inner iterations, complexity will be like `O(n^3), O(n^4)`.
 
 ```csharp
 public void LogMatchedOnes(IEnumerable<Student> students)
