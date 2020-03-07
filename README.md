@@ -41,7 +41,7 @@ public void LogAllStudentsNames(IEnumerable<Student> students)
 ### O(n^2)
 
 Runs in quadratic time.
-For example, when the input size is 5, 25 times iteration will take place.  
+For example, when the input size is 5, 25 times iteration will take place.
 With the much more inner iterations, complexity will be like `O(n^3), O(n^4)`.
 
 ```csharp
@@ -219,3 +219,11 @@ public (IEnumerable<string>, IEnumerable<string>) LogOrderedAndReversed(IEnumera
   return (names, namesReversed);
 }
 ```
+
+## Orders of common functions
+
+Below are the common order of magnitude functions in the algorithms.
+
+| Notation | Name     | Example     |
+|----------|----------|-------------|
+| O(1)     | constant | [here](#o1) |
