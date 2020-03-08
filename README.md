@@ -224,6 +224,10 @@ public (IEnumerable<string>, IEnumerable<string>) LogOrderedAndReversed(IEnumera
 
 Below are the common order of magnitude functions in the algorithms.
 
-| Notation | Name     | Example     |
-|----------|----------|-------------|
-| O(1)     | constant | [here](#o1) |
+| Notation | Name        | Example                     |
+|----------|-------------|-----------------------------|
+| O(1)     | constant    | [here](#o1)                 |
+| O(n)     | linear      | [here](#on)                 |
+| O(n^2)   | quadratic   | [here](#on2), [here](#onn2) |
+| O(n^3)   | cubic       | [like O(n^2)](#on2)         |
+| O(2^n)   | exponential | [here](#o2n)                |
